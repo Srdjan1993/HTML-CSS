@@ -1,0 +1,501 @@
+
+
+
+
+
+
+/*FONTS*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap');
+
+
+
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.clearfix:after{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1170px;
+}
+
+.d-flex{
+    display: flex;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flexbox;
+}
+
+.wrap{
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+
+.justify-between{
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-flex-pack: justify;
+}
+
+.align-items-center{
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-flex-align: center;
+}
+
+.two-column{
+    flex: 0 0 49%;
+    -webkit-flex: 0 0 49%;
+    -moz-flex: 0 0 49%;
+    -ms-flex:0 0 49%;
+}
+
+.three-colmun{
+    flex: 0 0 33%;
+    -webkit-flex: 0 0 33%;
+    -moz-flex: 0 0 33%;
+    -ms-flex:0 0 33%;
+
+}
+
+.four-column{
+    flex: 0 0 24%;
+    -webkit-flex: 0 0 24%;
+    -moz-flex: 0 0 24%;
+    -ms-flex:0 0 24%;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Playfair Display', serif;
+    color: #2C2D3C;
+    
+}
+
+h2{
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 4.3rem;
+    text-transform: capitalize;
+    letter-spacing: 1.06px;
+    padding-bottom: 10px;
+}
+
+
+/*Header start*/
+
+
+header{
+    background-color: #EBB970;
+}
+
+header .logo{
+    padding: 20px 0 12px;
+}
+
+header .main-menu{
+    list-style: none;
+    padding: 0;
+}
+
+header .main-menu li{
+    margin-left: 68px;
+}
+
+header .main-menu li a{
+    display: block;
+    color: #2C2D3C;
+    font-size: 1.4rem;
+    line-height: 19px;
+    letter-spacing: 0.46px;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 31px 0 20px;
+
+    transition: all 0.5s linear;
+    position: relative;
+
+}
+
+header .main-menu li a:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #2C2D3C;
+
+    transition: all 0.5s linear;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+header .main-menu li a.active:after,
+header .main-menu li a:hover:after{
+    width: 100%;
+}
+
+/*.sunglasses start*/
+
+.sunglasses{
+    padding: 149px 0 189px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 86px;
+}
+
+.sunglasses .sunglasses-title{
+    font-size: 60px;
+    line-height: 80px;
+    letter-spacing: 1.99px;
+    color: #fff;
+    display: inline-block;
+    padding: 42px 23px 38px 62px;
+    border: 1px solid #2C2D3C;
+    background-color: #2C2D3C;
+}
+
+/*.about start*/
+
+.about{
+    margin-bottom: 74px;
+}
+
+.about .about-title{
+    margin-bottom: 44px;
+    position: relative;
+    padding: 0 0 22px 0;
+}
+
+.about .about-title:after{
+    content: '';
+    display: block;
+    width: 90px;
+    height: 2px;
+    background: #EBB970;
+    color: #EBB970;
+
+
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.about .about-text{
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.7px;
+    color: #2C2D3C;
+    margin-bottom: 22px;
+
+}
+
+.about .about-link{
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: #EBB970;
+    color: #FFFFFF;
+    line-height: 2.6rem;
+    letter-spacing: 0.82px;
+    padding: 10px 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.about .about-aside figure img{
+    width: 100%;
+    display: block;
+}
+
+
+/*.services*/
+
+.services{
+    text-align: center;
+    margin-bottom: 113px;
+}
+
+.services .services-article{
+    background-color: #2C2D3C;
+    box-shadow: 0 12px 13px 0 rgba(145,145,145,0.5);
+    padding: 49px 0 54px;
+
+}
+
+.services .services-title{
+    margin-bottom: 68px;
+    padding: 0 0 22px 0;
+    position: relative;
+    display: block;
+
+}
+
+.services .services-title:after{
+    content: '';
+    display: block;
+    width: 90px;
+    height: 2px;
+    background: #EBB970;
+    color: #EBB970;
+
+
+
+    position: absolute;
+    bottom: 0;
+    left: 46%;
+}
+
+
+
+.services h3{
+    font-size: 2.4rem;
+    line-height: 3rem;
+    color: #FFFFFF;
+    padding: 17px 0;
+}
+
+.services .services-awesome{
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    background-color: #EBB970;
+    color: #fff;
+    border-bottom: 50px;
+    font-size: 3.3rem;
+    text-align: center;
+    padding: 27px 0;
+
+}
+
+.services p{
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    color: #fff;
+}
+
+/*.glasses*/
+
+.glasses{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 81px;
+}
+
+.glasses .glasses-item{
+    text-align: center;
+    line-height: 3rem;
+}
+
+.glasses h1{
+    font-size: 5rem;
+    padding: 169px 0 0;
+    /*    border-bottom: 32px;*/
+}
+
+.glasses p{
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    padding: 32px 0 142px;
+}
+
+/*.products*/
+
+.product{
+    margin-bottom: 81px;
+
+}
+
+.product .product-title{
+    text-align: center;
+    margin-bottom: 81px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 0 0 20px 0;
+}
+
+.product .product-title:after{
+    content: '';
+    display: block;
+    width: 90px;
+    height: 2px;
+    background: #EBB970;
+    color: #EBB970;
+    position: absolute;
+    bottom: 0;
+    left: 46%;
+}
+
+
+.product figure img{
+
+    display: block;
+    width: 100%;
+
+    transition: all 0.5s linear;
+}
+
+.product .product-figure{
+    position: relative;
+    margin-bottom: 23px;
+    overflow: hidden;
+}
+
+.product .product-item .product-item-text{
+    position: absolute;
+    bottom: 14px;
+    left: 13px;
+    right: 13px;
+    line-height: 2.6rem;
+    background-color: #EBB970;
+    color: #fff;
+    padding: 23px 25px 22px 8px;
+    display: none;
+}
+
+.product .product-item:hover .product-item-text{
+    display: block;
+}
+
+
+.product .product-item h3{
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    color: #2C2D3C;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.product .product-item footer p{
+    line-height: 2.6rem;
+    text-align: center;
+}
+
+.product .product-item:hover img{
+    transform: scale(1.2);
+}
+
+/*.contact*/
+
+.contact{
+    margin-bottom: 123px;
+
+}
+
+.contact .contact-title{
+    text-align: center;
+    margin-bottom: 93px;
+    position: relative;
+    padding: 0 0 22px 0;
+}
+
+.contact .contact-title:after{
+    content: '';
+    display: inline-block;
+    width: 90px;
+    height: 2px;
+    background: #EBB970;
+    color: #EBB970;
+    position: absolute;
+    bottom: 0;
+    left: 46%;
+}
+
+.contact .contact-form .form-group{
+    margin-bottom: 36px;
+}
+
+.contact .contact-form .form-element{
+    color: #2C2D3C;
+    border: 1px solid #2C2D3C;
+    line-height: 4.5rem;
+    width: 100%;
+    display: block;
+    padding: 0 10px;
+}
+
+.contact .contact-form .form-button{
+    border: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.82px;
+    display: inline-block;
+    padding: 10px 13px;
+    color: #fff;
+    background-color: #EBB970;
+}
+
+.contact .contact-aside-info{
+    margin-bottom: 20px;
+    padding: 0 0 0 130px;
+
+}
+
+.contact .contact-aside-info a{
+    color: #2C2D3C;
+    padding: 0 0 0 30px;
+
+}
+
+.contact .contact-aside-info a:hover{
+    color: blue;
+}
+
+/*footer*/
+
+.footer-end{
+    background-color: #EBB970;
+    padding: 17px 0;
+}
+
+.footer-end .footer-awesome{
+    font-size: 2rem;
+    margin-left: 31px;
+    color: #2C2D3C;
+}
+
